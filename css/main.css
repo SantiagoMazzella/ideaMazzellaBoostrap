@@ -1,0 +1,320 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    z-index: 9999;
+    position: sticky;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    width: 187h;
+    border-bottom: 3px solid grey;
+    background-color: white;
+    
+}
+
+.listaImg  {
+    
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0px;
+    margin-left: 10px;
+   
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 175vh;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.menuLista{
+    margin-top: 11px;
+    display: inline-block;
+    padding: 15px;
+   
+    
+}
+
+.menu .item { 
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #6D7783;
+}
+
+.tituloIndex{
+    text-align: center;
+    height: 16vh;
+    width: 50vh;
+    color: #17A589;
+}
+
+.parrafoIndex{
+    text-align: center;
+    height: 16vh;
+    width: 50vh;
+    color: #383970;
+    font-weight: 650;
+}
+
+.slogan1 {
+    color: #6D7783;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;  
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    bottom: 170px;
+    left: 250px;
+    
+}
+
+
+.redesSociales{
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+}
+
+.derechosReservados{
+    text-align:center;
+    position: relative;
+    top: 300px;
+}
+
+/*acá termina el Css del index y arranca el de "trabajos"*/
+
+.titulosHtml{
+    color: #eb6533;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;  
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.imgPag1{
+    margin: 10px;
+    margin-left: 100px;
+}
+
+.linkPag1{
+    text-decoration: none;
+    color: #17A589;
+    padding: 8px;
+    border: 3px solid skyblue ;
+    border-radius: 30%;
+    
+    
+}
+
+
+.tituloPrimerProyect {
+    text-align: center;
+    height: 5vh;
+    width: 30vh;
+    position: relative;
+    bottom: 250px;
+    left: 320px;
+    display: inline-block;
+    
+}
+
+.parrafoPrimerProyect {
+    height: 70px;
+    text-align: center;
+    color: #383970;
+    position: relative;
+    bottom: 220px;
+    left: 700px;
+    display: inline-block;
+    
+}
+
+.imgPag2 {
+    margin: 10px;
+    position: relative;
+    bottom: 10px;
+    left: 800px;
+}
+
+.linkPag2{
+    text-decoration: none;
+    color: #17A589;
+    padding: 8px;
+    border: 3px solid skyblue ;
+    border-radius: 30%;
+    
+    
+}
+
+.tituloSegundoProyect {
+    margin-top: 300px;
+    position: relative;
+    bottom: 200px;
+    right: 300px;
+    display: inline-block;
+    
+}
+
+.parrafoSegundoProyect {
+    height: 70px;
+    text-align: center;
+    color: #383970;
+    position: relative;
+    bottom: 95px;
+    right: 750px;
+    display: inline-block;
+}
+
+.imgTrabajos{
+    position: relative;
+    left: 850px;
+    bottom: 90px;
+}
+
+/*acá termina el Css del Trabajos y arranca el de "Conocimientos" */
+
+
+.imagenHtml{
+    margin-bottom: 100px;
+    position: relative;
+    left: 250px;
+    height: 100px;
+}
+
+.barraHtml{
+    margin-bottom: 100px;
+    position: relative;
+    left: 300px;
+    bottom: 15px; 
+    height: 50px;
+}
+
+.conocimientosCss{
+    height: 500px;
+    
+}
+
+.imagenCss{
+    margin-bottom: 100px;
+    position: relative;
+    left: 239px;
+    height: 123px;
+}
+
+.barraCss{
+    margin-bottom: 100px;
+    position: relative;
+    left: 290px;
+    top: 0px;
+    height: 55px;
+}
+
+.programadorConocimientos{
+    position: relative;
+    top: 200px;
+    left: 850px;
+    height: 200px;
+}
+
+.contenidoConocimiento{
+    position: relative;
+    left: 850px;
+    bottom: 525px;
+    width: 400px;
+}
+
+
+.tituloConocimiento{
+    position: relative;
+    bottom: 100px;
+    height: 10vh;
+    width: 50vh;
+    text-align: center;
+    color: #eb6533;
+}
+
+.textoConocimiento{
+    position: relative;
+    bottom: 100px;
+    height: 10vh;
+    width: 50vh;
+    text-align: center;
+    color: blue;
+}
+
+/*acá termina el Css de conocimientos y arranca el de Sobre mi */
+
+.contenidoSobreMi{
+    position: relative;
+    bottom: 250px;
+    width: 450px;
+    margin: 10px;
+    left: 150px;
+    text-align: center;
+}
+
+.tituloSobreMi{
+    margin-bottom: 25px;
+    color: #383970;
+
+}
+
+.parrafoSobreMi{
+    color: #17A589;
+}
+
+.fotoYo{
+    position: relative;
+    left: 800px;
+    top: 50px;
+
+}
+
+/*acá termina el Css de Sobre mi y arranca el de Contacto */
+
+
+
+.redesSocialesContactame{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 200px;
+    
+}
+
+.logos{
+    position: relative;
+    bottom: 250px;
+    margin: 50px;
+    
+}
+
+
+.formulario{
+    position: relative;
+    top: 350px;
+    left: 410px;
+    width: 600px;
+    height: 300px;
+    border: 3px solid #17A589;
+}
+
+#consultaFormulario{
+    width: 500px;
+    height: 150px;    
+}
