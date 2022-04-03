@@ -14,7 +14,6 @@ header{
     top: 0%;
     display: flex;
     flex-direction: row;
-    right: 100%;
     border-bottom: 3px solid grey;
     background-color: whitesmoke;
     align-items: center;
@@ -34,7 +33,7 @@ header{
 .menuLista{
     padding: 0.3rem;
     text-decoration: none;
-    font-size: 0.75rem;
+    font-size: 0.52rem;
 
 }
 
@@ -45,42 +44,49 @@ header{
 
 .contenedor{
     display: grid;
-    grid-template-areas: "img img"
-                         "titulo titulo"
-                         "parrafo parrafo"
-                         "footer footer";
-}
-div main {
-    justify-items: center;
+    grid-template-areas: "imagen "
+                         "titulo "
+                         "parrafo "
+                         "footer ";
+    justify-content: center;
 }
 
+
 .fotoIndex{
-    grid-area: img;
-    width: 23rem;
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tituloIndex{
     grid-area: titulo;
+    font-size: 1.5rem;
+    margin-left: 2rem;
     text-align: center;
     color: #383970;
+    padding: 1rem;
 }
 
 .parrafoIndex{
     grid-area: parrafo;
+    font-size: 1rem;
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    color: #17A589;
-}
+    padding: 5rem;
 
-.redesSociales{
-    display: flex;
-    flex-direction: column;
+    color: #17A589;
 }
 
  footer{
      grid-area: footer;
+     
  }
+
+ .redesSociales{
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+}
 
 
 /*acá termina el Css del index y arranca el de "trabajos"*/
@@ -306,4 +312,75 @@ div main {
 #consultaFormulario{
     width: 500px;
     height: 150px;    
+}
+
+
+@media only screen and (min-width:600px){
+
+    .menuLista{
+        font-size: 1rem;
+    }
+
+    .contenedorMain{
+        display: grid;
+        grid-template-areas: "imagen titulo"
+                             "imagen parrafo ";
+                             
+        justify-content: center;
+        grid-template-columns: 40% 60%;
+        column-gap: 2rem;
+    }
+
+    .fotoIndex{
+        display: flex;
+        width: 150%;
+        
+    }
+
+    .tituloIndex{
+
+        margin-top: 17vh;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #383970;
+    }
+    
+    .parrafoIndex{
+        font-size: 0.7rem;
+        text-align:center;
+        color: #17A589;
+    }
+    
+    footer{
+        margin-top: 40vh;
+    }
+    .redesSociales{
+        width: 30%;
+               
+    }
+}
+
+@media only screen and (min-width:1024px){
+
+    .contenedorMain{
+        display: grid;
+        grid-template-areas: "imagen titulo"
+                             "imagen parrafo ";
+        column-gap: 2rem;
+
+    }
+
+    .fotoIndex{
+        display: flex;
+        width: 40rem;
+    }
+
+    .tituloIndex{
+        font-size: 2rem;
+        padding: 3rem;
+    }
+
+    .parrafoIndex{
+        font-size: 1.2rem;
+    }
 }
