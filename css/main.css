@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 
@@ -87,199 +87,216 @@ header{
     display: inline-block;
     flex-direction: column;
 }
+.redesSociales a img{
+    width: 17%;
+}
 
 
 /*acá termina el Css del index y arranca el de "trabajos"*/
 
+
+.contenedorTrabajos{
+    display: grid;
+    grid-template-areas: "titulo"
+                         "subtitulo1"
+                         "foto1"
+                         "parrafo1"
+                         "subtitulo2"
+                         "foto2"
+                         "parrafo2";
+}
+
 .titulosHtml{
+    grid-area: titulo;
     color: #eb6533;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;  
-    font-size: 45px;
+    font-size: 2rem;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .imgPag1{
-    margin: 10px;
-    margin-left: 100px;
+   grid-area: foto1;
+   margin-top: 2.2rem;
+   margin-bottom: 2.2rem;
+   width: 15rem;
+   display: flex;
+   justify-self: center;
+   width: 15rem;
+   display: flex;
+   justify-self: center;
+   border-radius: 10%;
 }
 
 .linkPag1{
     text-decoration: none;
     color: #17A589;
-    padding: 8px;
-    border: 3px solid skyblue ;
-    border-radius: 30%;
-    
-    
 }
 
 
 .tituloPrimerProyect {
-    text-align: center;
-    height: 5vh;
-    width: 30vh;
-    position: relative;
-    bottom: 250px;
-    left: 320px;
-    display: inline-block;
-    
+   text-align: center;
+   grid-area: subtitulo1;
 }
 
 .parrafoPrimerProyect {
-    height: 70px;
+    grid-area: parrafo1;
     text-align: center;
-    color: #383970;
-    position: relative;
-    bottom: 220px;
-    left: 700px;
-    display: inline-block;
-    
+    padding: 2.5rem;
 }
 
 .imgPag2 {
-    margin: 10px;
-    position: relative;
-    bottom: 10px;
-    left: 800px;
+     grid-area: foto2;
+     margin-top: 2.2rem;
+     margin-bottom: 2.2rem;
+     width: 15rem;
+     display: flex;
+     justify-self: center;
+     border-radius: 10%;
 }
 
 .linkPag2{
     text-decoration: none;
     color: #17A589;
-    padding: 8px;
-    border: 3px solid skyblue ;
-    border-radius: 30%;
-    
-    
 }
 
 .tituloSegundoProyect {
-    margin-top: 300px;
-    position: relative;
-    bottom: 200px;
-    right: 300px;
-    display: inline-block;
-    
+    grid-area: subtitulo2;
+    text-align: center;
 }
 
 .parrafoSegundoProyect {
-    height: 70px;
+    grid-area: parrafo2;
     text-align: center;
-    color: #383970;
-    position: relative;
-    bottom: 95px;
-    right: 750px;
-    display: inline-block;
+    padding: 2.5rem;
 }
 
-.imgTrabajos{
-    position: relative;
-    left: 850px;
-    bottom: 90px;
-}
 
 /*acá termina el Css del Trabajos y arranca el de "Conocimientos" */
 
+.programadorConocimientos{
+    display:none;
+}
+
+.contConocimientos{
+    display: grid;
+    grid-template-areas:"titulo titulo"
+                        "conHtml conHtml"
+                        "conCss conCss"
+                        "subtit subtit";
+}
+
+.titulosHtml{
+    grid-area: titulo;
+    margin-bottom: 3rem;
+}
 
 .imagenHtml{
-    margin-bottom: 100px;
-    position: relative;
-    left: 250px;
-    height: 100px;
+    width: 4.2rem;
+    margin-left: 0.3rem;
 }
 
 .barraHtml{
-    margin-bottom: 100px;
-    position: relative;
-    left: 300px;
-    bottom: 15px; 
-    height: 50px;
+    width: 13.5rem;
 }
 
-.conocimientosCss{
-    height: 500px;
-    
+.conocimientosHtml{
+    grid-area: conHtml;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
 }
 
 .imagenCss{
-    margin-bottom: 100px;
-    position: relative;
-    left: 239px;
-    height: 123px;
+    width: 4.7rem;
 }
 
 .barraCss{
-    margin-bottom: 100px;
-    position: relative;
-    left: 290px;
-    top: 0px;
-    height: 55px;
+    width: 12rem;
+    height: 2.25rem;
+    margin-right: 0.7rem;
 }
 
-.programadorConocimientos{
-    position: relative;
-    top: 200px;
-    left: 850px;
-    height: 200px;
+.conocimientosCss{
+    grid-area: conCss;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.contenidoConocimiento{
-    position: relative;
-    left: 850px;
-    bottom: 525px;
-    width: 400px;
-}
-
 
 .tituloConocimiento{
-    position: relative;
-    bottom: 100px;
-    height: 10vh;
-    width: 50vh;
     text-align: center;
     color: #eb6533;
 }
 
 .textoConocimiento{
-    position: relative;
-    bottom: 100px;
-    height: 10vh;
-    width: 50vh;
     text-align: center;
     color: blue;
 }
 
+.contenidoConocimiento{
+    grid-area: subtit;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 5rem;
+}
+
+.footerConocimientos{
+    margin-top: 16.5rem;
+}
+
+
+
 /*acá termina el Css de conocimientos y arranca el de Sobre mi */
 
-.contenidoSobreMi{
-    position: relative;
-    bottom: 250px;
-    width: 450px;
-    margin: 10px;
-    left: 150px;
-    text-align: center;
+.contenedorSobreMi{
+    display: grid;
+    grid-template-areas: "foto foto"
+                         "titulo titulo"
+                         "parrafo parrafo";
+    
 }
 
 .tituloSobreMi{
-    margin-bottom: 25px;
-    color: #383970;
-
-}
-
-.parrafoSobreMi{
-    color: #17A589;
+    grid-area: titulo;
+    color: #eb6533;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;  
+    font-size: 2.3rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .fotoYo{
-    position: relative;
-    left: 800px;
-    top: 50px;
-
+    text-align: center;
+    grid-area: foto;
 }
 
+.fotoYo img{
+    width: 50%;
+}
+
+.subTituloSobreMi{
+    grid-area: titulo;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #383970;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contenidoSobreMi{
+    padding: 1.7rem;
+    grid-area: parrafo;
+    text-align: center;
+    color: #17A589;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
 /*acá termina el Css de Sobre mi y arranca el de Contacto */
 
 
@@ -314,8 +331,17 @@ header{
     height: 150px;    
 }
 
+/* empiezan las mediaqueries*/
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width:350px){
+    .menuLista{
+        font-size: 0.75rem;
+    }
+
+}
+
+
+@media only screen and (min-width:650px){
 
     .menuLista{
         font-size: 1rem;
@@ -350,14 +376,18 @@ header{
         text-align:center;
         color: #17A589;
     }
-    
-    footer{
-        margin-top: 40vh;
-    }
+
     .redesSociales{
-        width: 30%;
-               
+        margin-top: 33rem;
     }
+
+    .redesSociales a img{
+        width: 60%;
+    }
+    
+    
+    
+    
 }
 
 @media only screen and (min-width:1024px){
@@ -383,4 +413,193 @@ header{
     .parrafoIndex{
         font-size: 1.2rem;
     }
+
+    .redesSociales a img{
+        width: 70%;
+    }
+}
+
+/* fin de la mediaqueri del index e inicio del trabajos*/
+
+
+@media only screen and (min-width:650px){
+
+    .contenedorTrabajos{
+        display: grid;
+        grid-template-areas: "titulo titulo"
+                             "foto1 subtitulo1"
+                             "foto1 parrafo1"
+                             "subtitulo2 foto2"
+                             "parrafo2 foto2";
+    }
+
+    .imgPag1{
+        width: 18rem;
+    }
+
+    .imgPag2{
+        width: 18rem;
+    }
+
+    .redesSociales{
+        display: flex;
+        flex-direction: row;
+
+    }
+    footer{
+        margin-top: 0%;
+    }
+
+    @media only screen and (min-width:1024px){
+
+        .tituloPrimerProyect{
+            font-size: 2rem;
+            
+        }
+
+        .tituloSegundoProyect{
+            margin-top: 3rem;
+            font-size: 2rem;
+        }
+
+        .imgPag1{
+            width: 25rem;
+        }
+
+        .imgPag2{
+            width: 25rem;
+        }
+    }
+
+}
+
+/* fin de la mediaqueries trabajos e inicio de conocimientos*/
+
+@media only screen and (min-width:650px){
+
+    .contConocimientos{
+        grid-template-areas:"titulo titulo"
+                            "conHtml conHtml"
+                            "program program"
+                            "conCss conCss"
+                            "subtit subtit";
+    }
+
+    .programadorConocimientos{
+        margin-left: 40%;
+        grid-area: program;
+        display: block;
+    }
+
+    .programadorConocimientos img{
+        justify-self: center;
+        width: 35%;
+    }
+
+    .conocimientosHtml{
+        margin-top: 5rem;
+
+    }
+    .contenidoConocimiento{
+        margin-top: 2rem;
+        padding: 9rem;
+    }
+}
+
+@media only screen and (min-width:1024px){
+
+    .contConocimientos{
+        grid-template-areas:"titulo titulo"
+                            "conHtml conHtml"
+                            "program subtit"
+                            "conCss conCss";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5% 15% 40% 20%;
+        
+    }
+
+    .conocimientosHtml{
+        height: 7rem;
+        
+    }
+
+    .imagenHtml{
+        width: 8%;
+    }
+
+    .barraHtml{
+        height: 3rem;
+        width: 20%;
+    }
+
+    .programadorConocimientos{
+        align-self: flex-end;
+        padding-bottom: 4.3rem;
+    }
+
+    .programadorConocimientos img{
+        width: 15rem;
+    }
+
+    .conocimientosCss{
+        height: 10rem;
+    }
+
+    .imagenCss{
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .barraCss{
+        width: 20%;
+        height: 35%;
+    }
+}
+/* fin de la mediaqueries conociminetos e inicio de sobre mi*/
+
+@media only screen and (min-width:650px){
+
+        .tituloSobreMi{
+            font-size: 3rem;
+        }
+
+
+        .contenidoSobreMi{
+            padding-left: 8rem;
+            padding-right: 8rem;
+            font-size: 1.2rem;
+        }
+
+        .subTituloSobreMi{
+            font-size: 1.6rem;
+        }
+
+        
+}
+
+@media only screen and (min-width:1024px){
+
+    .contenedorSobreMi{
+        grid-template-areas: "titulo foto"
+                             "parrafo foto";
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .fotoYo{
+        align-self: center;
+    }
+
+    .fotoYo img{
+        width: 80%;
+    }
+
+    .subTituloSobreMi{
+        font-size: 1.8rem;
+    }
+
+    .contenidoSobreMi{
+        font-size: 1.1rem;
+    }
+
 }
