@@ -1,626 +1,529 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    
+/* css del Index*/
+
+.contenidoIndex{
+    text-align: center;
+    padding-top: 4rem;
 }
 
-body{
-    background: rgb(255,247,247);
-background: linear-gradient(90deg, rgba(255,247,247,1) 0%, rgba(160,232,220,1) 78%);
-}
-
-body{
-    background: rgb(255,247,247);
-background: linear-gradient(90deg, rgba(255,247,247,1) 0%, rgba(160,232,220,1) 78%);
-}
-
-header{
-    z-index: 9999;
-    position: sticky;
-    top: 0%;
-    display: flex;
-    flex-direction: row;
-    border-bottom: 3px solid rgb(158, 155, 155);
-    background-color: rgb(182, 176, 176);
-    align-items: center;
-    justify-content: space-between;
-}
-
-header nav ul li{
-    transition: 1s;
-}
-
-header nav ul li:hover{
-    transform: scale(1.1);
-    box-shadow: #383970 0.2rem 0.2rem;
-}
-
-.listaImg{
-    padding: 0.3rem;
-}
-
-.menu{
-    display: flex;
-    list-style: none;
-    
-}
-
-.menuLista{
-    background-color: #e28260;
-    margin: 0.3rem;
-    padding: 0.3rem;
-    text-decoration: none;
-    font-size: 0.52rem;
-    border: 1px #e28260 solid;
-    border-radius: 20%;
-}
-
-.item{
-    color: black;
-    text-decoration: none;
-}
-
-.contenedor{
-    display: grid;
-    grid-template-areas: "imagen "
-                         "titulo "
-                         "parrafo "
-                         "footer ";
-    justify-content: center;
-}
-
-
-.fotoIndex{
-    grid-area: imagen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.imagenBarra{
+    width: 80%;
 }
 
 .tituloIndex{
-    grid-area: titulo;
-    font-size: 1.5rem;
-    margin-left: 2rem;
-    text-align: center;
-    color: #383970;
-    padding: 1rem;
+    margin-bottom: 5rem;
+    color: rgb(131, 35, 240);
 }
 
 .parrafoIndex{
-    grid-area: parrafo;
-    font-size: 1rem;
-    text-align: center;
-    padding: 5rem;
-
-    color: #17A589;
+    color: rgb(4, 211, 211);
+    font-weight: 500;
 }
 
- footer{
-     grid-area: footer;
-     
- }
-
- .redesSociales{
-    display: flex;
-    display: inline-block;
-    flex-direction: column;
-}
-.redesSociales a img{
-    width: 17%;
+.redesSociales{
+    margin-top: 3rem;
 }
 
-
-/*acá termina el Css del index y arranca el de "trabajos"*/
-
-
-.contenedorTrabajos{
-    display: grid;
-    grid-template-areas: "titulo"
-                         "subtitulo1"
-                         "foto1"
-                         "parrafo1"
-                         "subtitulo2"
-                         "foto2"
-                         "parrafo2";
+.linkRedes{
+    text-decoration: none;
 }
+
+@media only screen and (min-width:768px){
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 48vh;
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (min-width:1200px){
+
+    .linkRedes{
+        width: 4%;
+    }
+}
+
+
+/* css de Conocimientos*/
 
 .titulosHtml{
-    grid-area: titulo;
-    color: #eb6533;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;  
-    font-size: 2rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    color: orange;
 }
 
+.imagenHtml{
+    width: 45%;
+}
+
+.conocimientosHtml{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.barraHtml{
+    height: 100%;
+    width: 55%;
+    margin-top: 2.5rem;
+}
+
+
+.imagenConocimientos{
+    text-align: center;
+    width: 50%;
+    margin-left: 5rem;
+}
+
+.conocimientosCss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imagenCss{
+    width: 50%;
+}
+
+.barraCss{
+    height: 100%;
+    width: 50%;
+    margin-top: 3rem;
+}
+
+
+.contenidoConocimiento{
+    text-align: center;
+}
+
+.tituloConocimiento{
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+    color: orange;
+}
+
+.textoConocimiento{
+    color: rgb(44, 81, 243);
+    margin: 1rem;
+}
+
+@media only screen and (min-width:768px){
+    
+    .titulosHtml{
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+
+    .programadorConocimientos{
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .conocimientosHtml{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .imagenHtml{
+        width: 19%;
+        margin-left: 2rem;
+        margin-right: 32%;
+    }
+    
+    .barraHtml{
+        height: 100%;
+        width: 35%;
+        margin-top: 5rem;
+    }
+    
+    
+    .imagenConocimientos{
+        width: 35%;
+        margin-left: 5rem;
+    }
+
+    .conocimientosCss{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .imagenCss{
+        width: 22%;
+        margin-left: 1.5rem;
+        margin-right: 2.7rem;
+    }
+    
+    .barraCss{
+        height: 100%;
+        width: 36%;
+        margin-top: 6rem;
+    }
+    
+    .contenidoConocimiento{
+        text-align: center;
+    }
+    
+    .tituloConocimiento{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        margin-top: 2.5rem;
+        color: orange;
+    }
+    
+    .textoConocimiento{
+        font-size: 2rem;
+        color: rgb(44, 81, 243);
+        margin: 4rem;
+    }
+
+    .derechosReservados{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:1200px){
+
+    .titulosHtml{
+        font-size: 2.5rem;
+    }
+
+    .imagenHtml{
+        width: 15%;
+        margin-left: 14rem;
+        margin-right: 28rem;
+    }
+    
+    .barraHtml{
+        height: 100%;
+        width: 23%;
+        margin-top: 5rem;
+    }
+    
+    
+    .imagenConocimientos{
+        width: 20%;
+    }
+    
+    .imagenCss{
+        width: 17%;
+        margin-left: 13.5rem;
+        margin-right: 27rem;
+    }
+    
+    .barraCss{
+        height: 100%;
+        width: 23%;
+        margin-top: 6rem;
+    }
+
+    .tituloConocimiento{
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        margin-top: 2.5rem;
+        color: orange;
+    }
+    
+    .textoConocimiento{
+        font-size: 1.5rem;
+        color: rgb(44, 81, 243);
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+/* Css de trabajos*/
+
 .imgPag1{
-   grid-area: foto1;
-   margin-top: 2.2rem;
-   margin-bottom: 2.2rem;
-   width: 15rem;
-   display: flex;
-   justify-self: center;
-   width: 15rem;
-   display: flex;
-   justify-self: center;
-   border-radius: 10%;
+    width: 90%;
+    margin-left: 1.0rem;
+}
+
+.apple{
+    text-align: center;
+}
+
+.tituloPrimerProyect{
+    margin-top: 2rem;
 }
 
 .linkPag1{
     text-decoration: none;
-    color: #17A589;
+    color: blueviolet;
 }
 
-
-.tituloPrimerProyect {
-   text-align: center;
-   grid-area: subtitulo1;
+.parrafoPrimerProyect{
+    padding: 2rem;
+    color: rgb(51, 103, 247);
 }
 
-.parrafoPrimerProyect {
-    grid-area: parrafo1;
+.meli{
     text-align: center;
-    padding: 2.5rem;
 }
 
-.imgPag2 {
-     grid-area: foto2;
-     margin-top: 2.2rem;
-     margin-bottom: 2.2rem;
-     width: 15rem;
-     display: flex;
-     justify-self: center;
-     border-radius: 10%;
+.imgPag2{
+    width: 90%;
+    margin-left: 1.0rem;
+}
+
+.tituloSegundoProyect{
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .linkPag2{
     text-decoration: none;
-    color: #17A589;
+    color: blueviolet;
 }
 
-.tituloSegundoProyect {
-    grid-area: subtitulo2;
+.parrafoSegundoProyect{
     text-align: center;
+    padding: 2rem;
+    color: rgb(51, 103, 247);
 }
 
-.parrafoSegundoProyect {
-    grid-area: parrafo2;
-    text-align: center;
-    padding: 2.5rem;
-}
-
-
-/*acá termina el Css del Trabajos y arranca el de "Conocimientos" */
-
-.programadorConocimientos{
-    display:none;
-}
-
-.contConocimientos{
-    display: grid;
-    grid-template-areas:"titulo titulo"
-                        "conHtml conHtml"
-                        "conCss conCss"
-                        "subtit subtit";
-}
-
-.titulosHtml{
-    grid-area: titulo;
-    margin-bottom: 3rem;
-}
-
-.imagenHtml{
-    width: 4.2rem;
-    margin-left: 0.3rem;
-}
-
-.barraHtml{
-    width: 13.5rem;
-}
-
-.conocimientosHtml{
-    grid-area: conHtml;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-
-.imagenCss{
-    width: 4.7rem;
-}
-
-.barraCss{
-    width: 12rem;
-    height: 2.25rem;
-    margin-right: 0.7rem;
-}
-
-.conocimientosCss{
-    grid-area: conCss;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.tituloConocimiento{
-    text-align: center;
-    color: #eb6533;
-}
-
-.textoConocimiento{
-    text-align: center;
-    color: blue;
-}
-
-.contenidoConocimiento{
-    grid-area: subtit;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    padding: 5rem;
-}
-
-.footerConocimientos{
-    margin-top: 16.5rem;
+.imgLink{
+    width: 10%;
 }
 
 
 
-/*acá termina el Css de conocimientos y arranca el de Sobre mi */
 
-.contenedorSobreMi{
-    display: grid;
-    grid-template-areas: "foto foto"
-                         "titulo titulo"
-                         "parrafo parrafo";
+
+@media only screen and (min-width:768px){
     
-}
-
-.tituloSobreMi{
-    grid-area: titulo;
-    color: #eb6533;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;  
-    font-size: 2.3rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.fotoYo{
-    text-align: center;
-    grid-area: foto;
-}
-
-.fotoYo img{
-    width: 50%;
-}
-
-.subTituloSobreMi{
-    grid-area: titulo;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #383970;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.contenidoSobreMi{
-    padding: 1.7rem;
-    grid-area: parrafo;
-    text-align: center;
-    color: #17A589;
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-}
-/*acá termina el Css de Sobre mi y arranca el de Contacto */
-
-
-
-.redesSocialesContactame{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 200px;
-    
-}
-
-.logos{
-    position: relative;
-    bottom: 250px;
-    margin: 50px;
-    
-}
-
-
-.formulario{
-    position: relative;
-    top: 350px;
-    left: 410px;
-    width: 600px;
-    height: 300px;
-    border: 3px solid #17A589;
-}
-
-#consultaFormulario{
-    width: 500px;
-    height: 150px;    
-}
-
-/* empiezan las mediaqueries*/
-
-@media only screen and (min-width:350px){
-    .menuLista{
-        font-size: 0.75rem;
-    }
-
-}
-
-
-@media only screen and (min-width:650px){
-
-    .menuLista{
-        font-size: 1rem;
-    }
-
-    .contenedorMain{
-        display: grid;
-        grid-template-areas: "imagen titulo"
-                             "imagen parrafo ";
-                             
-        justify-content: center;
-        grid-template-columns: 40% 60%;
-        column-gap: 2rem;
-    }
-
-    .fotoIndex{
-        display: flex;
-        width: 150%;
-        
-    }
-
-    .tituloIndex{
-
-        margin-top: 17vh;
-        font-size: 1.5rem;
-        text-align: center;
-        color: #383970;
-    }
-    
-    .parrafoIndex{
-        font-size: 0.7rem;
-        text-align:center;
-        color: #17A589;
-    }
-
-    .redesSociales{
-        margin-top: 33rem;
-    }
-
-    .redesSociales a img{
-        width: 60%;
-    }
-    
-    
-    
-    
-}
-
-@media only screen and (min-width:1024px){
-
-    .contenedorMain{
-        display: grid;
-        grid-template-areas: "imagen titulo"
-                             "imagen parrafo ";
-        column-gap: 2rem;
-
-    }
-
-    .fotoIndex{
-        display: flex;
-        width: 40rem;
-    }
-
-    .tituloIndex{
-        font-size: 2rem;
-        padding: 3rem;
-    }
-
-    .parrafoIndex{
-        font-size: 1.2rem;
-    }
-
-    .redesSociales a img{
-        width: 70%;
-    }
-}
-
-/* fin de la mediaqueri del index e inicio del trabajos*/
-
-
-@media only screen and (min-width:650px){
-
-    .contenedorTrabajos{
-        display: grid;
-        grid-template-areas: "titulo titulo"
-                             "foto1 subtitulo1"
-                             "foto1 parrafo1"
-                             "subtitulo2 foto2"
-                             "parrafo2 foto2";
-    }
-
     .imgPag1{
-        width: 18rem;
+        margin-top: 4rem;
+        width:45%;
+        height: 70%;
+    }
+
+    .tituloPrimerProyect{
+        width: 30rem;
     }
 
     .imgPag2{
-        width: 18rem;
+        margin-top: 4rem;
+        width:45%;
+        height: 70%;
     }
 
-    .redesSociales{
-        display: flex;
-        flex-direction: row;
-
+    .tituloSegundoProyect{
+        width: 30rem;
     }
-    footer{
-        margin-top: 0%;
-    }
-
-    @media only screen and (min-width:1024px){
-
-        .tituloPrimerProyect{
-            font-size: 2rem;
-            
-        }
-
-        .tituloSegundoProyect{
-            margin-top: 3rem;
-            font-size: 2rem;
-        }
-
-        .imgPag1{
-            width: 25rem;
-        }
-
-        .imgPag2{
-            width: 25rem;
-        }
+    
+    .meli{
+        margin-top: 10rem;
     }
 
+    .imgLink{
+        width:6%;
+    }
 }
 
-/* fin de la mediaqueries trabajos e inicio de conocimientos*/
 
-@media only screen and (min-width:650px){
+@media only screen and (min-width:1200px){
 
-    .contConocimientos{
-        grid-template-areas:"titulo titulo"
-                            "conHtml conHtml"
-                            "program program"
-                            "conCss conCss"
-                            "subtit subtit";
+    .tituloPrimerProyect{
+        margin-left: 6rem;
     }
 
-    .programadorConocimientos{
-        margin-left: 40%;
-        grid-area: program;
-        display: block;
+    .parrafoPrimerProyect{
+        margin-top: 3rem;
     }
 
-    .programadorConocimientos img{
-        justify-self: center;
-        width: 35%;
+    .tituloSegundoProyect{
+        margin-left: 6rem;
     }
 
-    .conocimientosHtml{
-        margin-top: 5rem;
-
+    .parrafoSegundoProyect{
+        margin-top: 3rem;
     }
-    .contenidoConocimiento{
+
+    .imgLink{
+        width:5%;
+    }
+}
+
+/* Css de contactame */
+
+.botonContacto1{
+    width: 50%;
+    margin-left: 3rem;
+}
+
+.botonContacto2{
+    width: 50%;
+    margin-left: 1rem;
+}
+
+.botonContacto3{
+    margin-top: 2rem;
+    width: 65%;
+    margin-left: 1.65rem;
+    margin-bottom: 4rem;
+}
+
+.botonContacto4{
+    margin-top: 2rem;
+    width: 65%;
+    margin-left: 1.7rem;
+}
+
+.formulario{
+    margin-top: 2rem;
+    margin-left: 16%;
+    height: 90%;
+    width: 70%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#consultaFormulario{
+    width: 90%;
+}
+
+@media only screen and (min-width:768px){
+
+    .botonContacto1{
+        width: 40%;
+        margin-left: 9.5rem;
+    }
+    
+    .botonContacto2{
+        width: 40%;
+        margin-left: 2.5rem;
+    }
+    
+    .botonContacto3{
         margin-top: 2rem;
-        padding: 9rem;
+        width: 50%;
+        margin-left: 7.5rem;
+        margin-bottom: 4rem;
+    }
+    
+    .botonContacto4{
+        margin-top: 2rem;
+        width: 50%;
+        margin-left: 4.5rem;
+    }
+
+
+    .formulario{
+        margin-left: 11rem;
+        height: 22rem;
+        width: 25rem;
+        text-align: center;
+    }
+
+    #consultaFormulario{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        height: 9rem;
     }
 }
 
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:768px){
 
-    .contConocimientos{
-        grid-template-areas:"titulo titulo"
-                            "conHtml conHtml"
-                            "program subtit"
-                            "conCss conCss";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 5% 15% 40% 20%;
+    .botonContacto1{
+        width: 38%;
+        margin-left: 50%;
+    }
+    
+    .botonContacto2{
+        width: 38%;
+        margin-left: 3%;
+    }
+    
+    .botonContacto3{
+        width: 47%;
         
+        margin-left: 55%;
+        margin-bottom: 4rem;
     }
-
-    .conocimientosHtml{
-        height: 7rem;
+    
+    .botonContacto4{
+        width: 47%;
         
+        margin-left: 23%;
+    }
+    
+
+    .formulario{
+
+        margin-left: 25%;
+        height: 22rem;
+        width: 25rem;
     }
 
-    .imagenHtml{
-        width: 8%;
+    #consultaFormulario{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        height: 9rem;
     }
 
-    .barraHtml{
-        height: 3rem;
-        width: 20%;
-    }
-
-    .programadorConocimientos{
-        align-self: flex-end;
-        padding-bottom: 4.3rem;
-    }
-
-    .programadorConocimientos img{
-        width: 15rem;
-    }
-
-    .conocimientosCss{
-        height: 10rem;
-    }
-
-    .imagenCss{
-        height: 7rem;
-        width: 7rem;
-    }
-
-    .barraCss{
-        width: 20%;
-        height: 35%;
-    }
-}
-/* fin de la mediaqueries conociminetos e inicio de sobre mi*/
-
-@media only screen and (min-width:650px){
-
-        .tituloSobreMi{
-            font-size: 3rem;
-        }
-
-
-        .contenidoSobreMi{
-            padding-left: 8rem;
-            padding-right: 8rem;
-            font-size: 1.2rem;
-        }
-
-        .subTituloSobreMi{
-            font-size: 1.6rem;
-        }
-
-        
 }
 
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1200px){
 
-    .contenedorSobreMi{
-        grid-template-areas: "titulo foto"
-                             "parrafo foto";
-        grid-template-columns: 1fr 1fr;
+    .formulario{
+
+        margin-left: 30%;
         
     }
+}
 
-    .fotoYo{
-        align-self: center;
-    }
+/* Css SobreMi */
 
-    .fotoYo img{
-        width: 80%;
+.fotoYo{
+    text-align: center;
+}
+.fotoSobreMi{
+    width: 90%;
+}
+
+.subTituloSobreMi{
+    margin-top: 2rem;
+    text-align: center;
+    color: blueviolet;
+}
+
+.parrafoSobreMi{
+    text-align: center;
+    color: rgb(42, 115, 250);
+    padding: 2rem;
+}
+
+@media only screen and (min-width:768px){
+
+    .fotoSobreMi{
+        width: 110%;
+        margin-right: 5%;
     }
 
     .subTituloSobreMi{
-        font-size: 1.8rem;
+        margin-left: 15%;
+    }
+
+    .parrafoSobreMi{
+        margin-left: 15%;
     }
 
     .contenidoSobreMi{
-        font-size: 1.1rem;
+        padding: 0rem;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .subTituloSobreMi{
+        margin-left: 35%;
     }
 
+    .parrafoSobreMi{
+        margin-left: 35%;
+    }
 }
